@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-color: #512da8;
+}
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #101010e8;
+}
+input {
+    width: 100%;
+    background-color: #141313;
+    border: none;
+    padding: 6px;
+    font-size: 12px;
+    color: #fff;
+    caret-color: #fff;
+    outline: none;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+input:focus {
+    background-color: #000;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+button {
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+button:hover {
+    letter-spacing: 2px;
+    background-color: #a032a9;
+}
+
+
+/* Start CRUD */
+.crud .container {
+    width: 80%;
+    margin: 15px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+.crud h1 {
+    color: #fff;
+}
+.crud .container > p {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.crud .container .form {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.crud .container .form input,
+.crud .container .form .price {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.crud .container .form input {
+    background-color: #0e0e0e;
+    padding: 6px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+.crud .container .form .price {
+    display: flex;
+    gap: 5px;
+}
+.crud .container .form .price input {
+    width: 20%;
+}
+.crud .container .form .price p#total {
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+    padding: 4px;
+    text-align: start;
+    background-color: #c90606;
+    height: 26px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.crud .container .form .price p#total::before {
+    content: "Total: ";
+}
+.crud .container .form button#create,
+.crud .container .form button#update-item {
+    width: 100%;
+}
+.crud .container .search #search {
+    margin-bottom: 10px;
+}
+.crud .container .search-by {
+    display: flex;
+    gap: 20px;
+}
+.crud .container .search-by button {
+    flex: 1;
+}
+
+.crud .container #delete-all {
+    display: none;
+    width: 100%;
+}
+
+.crud .container table {
+    width: 100%;
+    color: #fff;
+}
+.crud .container table td {
+    font-size: 13px;
+}
+.crud .container table tr {
+    border-top: 1px solid #fff !important;
+}
+.crud .container table tr th {
+    text-transform: uppercase;
+    font-size: 13px;
+}
