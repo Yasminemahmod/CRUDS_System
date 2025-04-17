@@ -111,13 +111,12 @@ function showDeleteBtn() {
     if(productSet.length > 0) {
         deleteAllBtn.style.display = "block";
         deleteAllBtn.innerHTML = `Delete All (${productSet.length})`;
-    } else {
-        deleteAllBtn.style.display = "none";
-    }
+    } 
 }
 deleteAllBtn.onclick = function() {
     localStorage.clear();
     dataTable.innerHTML = '';
+    deleteAllBtn.style.display = "none";
 }
 
 
